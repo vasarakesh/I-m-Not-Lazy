@@ -72,6 +72,12 @@ npm run build
 
 Output goes to `dist/` — Vercel picks this up automatically. The marketing website is copied to `dist/website/` and served at `/`.
 
+## Deploy to Vercel
+
+1. Import [github.com/vasarakesh/I-m-Not-Lazy](https://github.com/vasarakesh/I-m-Not-Lazy) in the [Vercel dashboard](https://vercel.com/new) (or run `vercel login` then `vercel deploy --prod`).
+2. Add `VITE_FIREBASE_*` env vars in Project Settings → Environment Variables (required for the app; not needed for the marketing homepage).
+3. Production URL will be shown after deploy (e.g. `https://im-not-lazy.vercel.app`).
+
 ### Regenerate app screenshots
 
 ```powershell
