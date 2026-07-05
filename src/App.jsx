@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './hooks/useAuth';
 import { ProtectedRoute, PublicOnlyRoute } from './components/layout/ProtectedRoute';
+import { FirebaseSetupNotice } from './components/FirebaseSetupNotice';
+import { isFirebaseConfigured } from './config/firebase';
 import Onboarding from './pages/Onboarding';
 import Wizard from './pages/Wizard';
 import Dashboard from './pages/Dashboard';
@@ -11,6 +13,10 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
 export default function App() {
+  if (!isFirebaseConfigured) {
+    return <FirebaseSetupNotice />;
+  }
+
   return (
     <AuthProvider>
       <BrowserRouter>
