@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <base href="/website/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Im Not Lazy — a free app for college-age adults to gradually escape social media addiction and reclaim time without shame or extreme detox tactics." />
+  <title>Im Not Lazy — Reclaim your time, gradually</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#" class="logo">Im Not Lazy</a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="/onboarding" class="btn btn--primary">Launch App</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__badge">Free · 18+ · No shame tactics</span>
+          <h1>Reclaim your time from social media — gradually, not drastically</h1>
+          <p class="hero__lead">
+            Im Not Lazy is a calm, supportive web app for college-age adults who want to
+            spend less time scrolling and more time on what actually matters. No extreme
+            detox. No guilt. Just practical steps that compound.
+          </p>
+          <div class="hero__actions">
+            <a href="/onboarding" class="btn btn--primary btn--lg">Get started free</a>
+            <a href="#features" class="btn btn--secondary btn--lg">See how it works</a>
+          </div>
+          <p class="hero__note">Works on any device. Your data stays yours. Delete anytime.</p>
+        </div>
+        <div class="hero__visual">
+          <div class="phone-frame">
+            <div class="phone-frame__screen">
+              <div class="phone-topbar">
+                <span>Im Not Lazy</span>
+                <span style="font-size:0.75rem;color:var(--color-text-muted)">Dark</span>
+              </div>
+              <div class="phone-content">
+                <div class="mock-title">Dashboard</div>
+                <div class="mock-sub">Your progress at a glance.</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+                  <div class="mock-card">
+                    <div class="mock-card__label">Current streak</div>
+                    <div class="mock-card__value">7</div>
+                  </div>
+                  <div class="mock-card">
+                    <div class="mock-card__label">Best streak</div>
+                    <div class="mock-card__value">12</div>
+                  </div>
+                </div>
+                <div class="mock-card mock-card--accent">
+                  <div class="mock-card__label">Hours reclaimed this week</div>
+                  <div class="mock-card__value">4.5</div>
+                  <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:4px;font-style:italic">About 3 focused study sessions</p>
+                </div>
+                <div class="mock-chart">
+                  <div class="mock-bar" style="height:60%"></div>
+                  <div class="mock-bar" style="height:45%"></div>
+                  <div class="mock-bar" style="height:70%"></div>
+                  <div class="mock-bar" style="height:35%"></div>
+                  <div class="mock-bar" style="height:50%"></div>
+                  <div class="mock-bar" style="height:30%"></div>
+                  <div class="mock-bar" style="height:40%"></div>
+                </div>
+              </div>
+              <div class="phone-nav">
+                <span class="active">Dashboard</span>
+                <span>Check-in</span>
+                <span>Setup</span>
+                <span>Learn</span>
+                <span>Settings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-item__num">5</div>
+            <div class="stat-item__label">Core screens built for daily use</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">0</div>
+            <div class="stat-item__label">Shame-based tactics</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">100%</div>
+            <div class="stat-item__label">Free — no subscriptions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">18+</div>
+            <div class="stat-item__label">Built for young adults</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__label">About the app</p>
+        <h2>Built for people who are tired of "just delete the app" advice</h2>
+        <p class="section__lead">
+          Most digital wellness tools either shame you into quitting cold turkey or gamify
+          your behavior with streaks that feel like another obligation. Im Not Lazy takes
+          a different path: understand your habits, reduce friction gradually, track how
+          you feel, and build a personalized plan based on what you actually want back —
+          study time, fitness, sleep, creative work, or real social connection.
+        </p>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>Calm, not punitive</h3>
+            <p>No red alerts, no "you failed" messages. The app supports small wins and honest self-reporting without judgment.</p>
+          </div>
+          <div class="trust-card">
+            <h3>Evidence-informed, not preachy</h3>
+            <p>The Learn feed explains dopamine loops, algorithm design, and attention economics in plain language — so you understand why scrolling hooks you.</p>
+          </div>
+          <div class="trust-card">
+            <h3>Your data, your control</h3>
+            <p>We collect only what's needed for the app to work. GDPR/CCPA-friendly deletion flow removes your account and all data in Settings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--alt" id="features">
+      <div class="container">
+        <p class="section__label">Full functionality</p>
+        <h2>Every screen, built for real daily use</h2>
+        <p class="section__lead">Five core experiences plus settings and legal pages — all wired to Firebase for persistence across devices.</p>
+
+        <!-- Onboarding -->
+        <div class="feature-row">
+          <div class="feature-detail">
+            <h3>1. Onboarding Quiz</h3>
+            <p>Your journey starts with an honest conversation — not a lecture. The onboarding flow confirms you're 18+, creates your account, and asks three key questions:</p>
+            <ul class="feature-list">
+              <li>Which apps waste your time (Instagram, TikTok, YouTube, and more)</li>
+              <li>How many hours per day you estimate scrolling</li>
+              <li>What you'd do with reclaimed time (study, fitness, sleep, creativity)</li>
+            </ul>
+            <p>From your answers, the app generates a <strong>personalized detox path</strong> using deterministic local logic — no AI APIs, no black box. Recommendations like notification reduction, feed friction, time blocks, and evening cutoffs are tailored to your specific combination of apps and goals.</p>
+            <p>Everything saves to Firestore tied to your authenticated account.</p>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Which apps waste your time?</div>
+                  <div class="mock-sub">Select all that apply. No judgment.</div>
+                  <div class="mock-progress"><div class="mock-progress__fill" style="width:50%"></div></div>
+                  <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-bottom:8px">Step 3 of 6</p>
+                  <div class="mock-option mock-option--selected"><input type="checkbox" class="mock-checkbox" checked readonly /> Instagram</div>
+                  <div class="mock-option mock-option--selected"><input type="checkbox" class="mock-checkbox" checked readonly /> TikTok</div>
+                  <div class="mock-option"><input type="checkbox" class="mock-checkbox" readonly /> YouTube</div>
+                  <div class="mock-option"><input type="checkbox" class="mock-checkbox" readonly /> Reddit</div>
+                  <div class="mock-btn">Continue</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wizard -->
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-detail">
+            <h3>2. Setup Wizard</h3>
+            <p>Knowledge without action doesn't change habits. The Setup Wizard walks you through concrete, step-by-step hardening for each platform — starting with Instagram, with YouTube ready on the same JSON-driven pattern.</p>
+            <ul class="feature-list">
+              <li>Each step has a title, instructions, optional tips, and warnings</li>
+              <li>Check off steps as you complete them — progress persists to Firestore</li>
+              <li>Platform tabs let you switch between Instagram and YouTube guides</li>
+              <li>Completing all steps earns a badge on your profile</li>
+            </ul>
+            <p>Step content lives in a local JSON file, so new platforms can be added without rewriting the UI.</p>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Setup Wizard</div>
+                  <div class="mock-sub">Instagram hardening guide</div>
+                  <div style="display:flex;gap:6px;margin-bottom:12px">
+                    <span style="padding:4px 10px;background:var(--color-accent-subtle);color:var(--color-accent);border-radius:6px;font-size:0.6875rem;font-weight:600">Instagram ✓</span>
+                    <span style="padding:4px 10px;border:1px solid var(--color-border);border-radius:6px;font-size:0.6875rem">YouTube</span>
+                  </div>
+                  <div class="mock-progress"><div class="mock-progress__fill" style="width:67%"></div></div>
+                  <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-bottom:8px">4 of 6 steps done</p>
+                  <div class="mock-card" style="border-color:var(--color-success);background:var(--color-success-bg)">
+                    <div style="display:flex;gap:8px;align-items:flex-start">
+                      <input type="checkbox" class="mock-checkbox" checked readonly />
+                      <div>
+                        <strong style="font-size:0.8125rem">Turn off non-essential notifications</strong>
+                        <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:2px">Disable likes, comments, follower alerts...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mock-card">
+                    <div style="display:flex;gap:8px;align-items:flex-start">
+                      <input type="checkbox" class="mock-checkbox" readonly />
+                      <div>
+                        <strong style="font-size:0.8125rem">Remove Instagram from home screen</strong>
+                        <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:2px">Move to a folder on the last page...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone-nav">
+                  <span>Dashboard</span><span>Check-in</span><span class="active">Setup</span><span>Learn</span><span>Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="feature-row">
+          <div class="feature-detail">
+            <h3>3. Dashboard</h3>
+            <p>Your command center for progress — clean, credible, and immediately useful.</p>
+            <ul class="feature-list">
+              <li><strong>Current streak</strong> — consecutive days with a check-in</li>
+              <li><strong>Best streak</strong> — your personal record</li>
+              <li><strong>Hours reclaimed this week</strong> — calculated from your onboarding baseline minus self-reported daily usage</li>
+              <li><strong>Human equivalents</strong> — "about 3 study sessions" or "roughly 6 workouts" instead of abstract numbers</li>
+              <li><strong>Weekly usage trend chart</strong> — bar chart with baseline dashed line</li>
+              <li><strong>Your detox path summary</strong> and earned badges</li>
+            </ul>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Dashboard</div>
+                  <div class="mock-sub">Your progress at a glance.</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+                    <div class="mock-card"><div class="mock-card__label">Current streak</div><div class="mock-card__value">7</div></div>
+                    <div class="mock-card"><div class="mock-card__label">Best streak</div><div class="mock-card__value">12</div></div>
+                  </div>
+                  <div class="mock-card mock-card--accent">
+                    <div class="mock-card__label">Hours reclaimed</div>
+                    <div class="mock-card__value">4.5</div>
+                  </div>
+                  <span class="mock-badge" style="margin-top:8px">Instagram setup complete</span>
+                </div>
+                <div class="phone-nav">
+                  <span class="active">Dashboard</span><span>Check-in</span><span>Setup</span><span>Learn</span><span>Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Check-in -->
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-detail">
+            <h3>4. Daily Check-in</h3>
+            <p>Fast, focused, and designed for morning and evening use.</p>
+            <ul class="feature-list">
+              <li><strong>Morning intention</strong> — what you'll focus on instead of scrolling</li>
+              <li><strong>Scroll time</strong> — rough daily estimate in hours</li>
+              <li><strong>Mood rating</strong> — simple 1–5 scale</li>
+              <li><strong>Evening reflection</strong> — what worked, what didn't</li>
+              <li><strong>Mood trend chart</strong> — visual line graph over recent days</li>
+              <li><strong>Pattern insight</strong> — careful correlation copy like "your lower-scroll days often line up with better mood scores" — never fake causation</li>
+            </ul>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Daily Check-in</div>
+                  <div class="mock-sub">Sunday, July 5</div>
+                  <div class="mock-card" style="margin-bottom:8px">
+                    <strong style="font-size:0.75rem">Morning intention</strong>
+                    <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:4px">Finish chapter 4, walk after lunch</p>
+                  </div>
+                  <p style="font-size:0.75rem;font-weight:600;margin-bottom:4px">How are you feeling?</p>
+                  <div class="mock-mood">
+                    <span>1</span><span>2</span><span>3</span><span class="active">4</span><span>5</span>
+                  </div>
+                  <div class="mock-card" style="margin-top:8px;background:var(--color-accent-subtle);border-color:var(--color-accent)">
+                    <p style="font-size:0.6875rem">Your lower-scroll days often line up with better mood scores.</p>
+                  </div>
+                </div>
+                <div class="phone-nav">
+                  <span>Dashboard</span><span class="active">Check-in</span><span>Setup</span><span>Learn</span><span>Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learn -->
+        <div class="feature-row">
+          <div class="feature-detail">
+            <h3>5. Learn Feed</h3>
+            <p>Short, readable educational cards that explain the mechanics behind compulsive scrolling — without lecturing.</p>
+            <ul class="feature-list">
+              <li>Topics: dopamine loops, attention economy, algorithm design, social comparison, sleep and screens</li>
+              <li>Category filters (dopamine, attention, algorithms)</li>
+              <li>Tap to expand full content with reading time estimates</li>
+              <li>All content loaded from a local JSON file — easy to update</li>
+            </ul>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Learn</div>
+                  <div class="mock-sub">Why scrolling hooks you.</div>
+                  <div style="display:flex;gap:4px;margin-bottom:8px;flex-wrap:wrap">
+                    <span style="padding:2px 8px;background:var(--color-accent-subtle);color:var(--color-accent);border-radius:999px;font-size:0.625rem;font-weight:600">All</span>
+                    <span style="padding:2px 8px;border:1px solid var(--color-border);border-radius:999px;font-size:0.625rem">Dopamine</span>
+                    <span style="padding:2px 8px;border:1px solid var(--color-border);border-radius:999px;font-size:0.625rem">Attention</span>
+                  </div>
+                  <div class="mock-learn">
+                    <span class="mock-learn__tag">dopamine</span>
+                    <strong style="font-size:0.8125rem;display:block">Why scrolling feels impossible to stop</strong>
+                    <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:2px">Variable rewards keep your brain guessing — and staying.</p>
+                  </div>
+                  <div class="mock-learn">
+                    <span class="mock-learn__tag">attention</span>
+                    <strong style="font-size:0.8125rem;display:block">Your attention is the product being sold</strong>
+                    <p style="font-size:0.6875rem;color:var(--color-text-muted);margin-top:2px">If you're not paying, you're the product.</p>
+                  </div>
+                </div>
+                <div class="phone-nav">
+                  <span>Dashboard</span><span>Check-in</span><span>Setup</span><span class="active">Learn</span><span>Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-detail">
+            <h3>6. Settings, Privacy &amp; Account Deletion</h3>
+            <p>Legal requirements baked into the product, not bolted on.</p>
+            <ul class="feature-list">
+              <li>Light/dark mode toggle</li>
+              <li>Clear explanation of what data is stored and why</li>
+              <li>Links to Privacy Policy and Terms of Service</li>
+              <li><strong>Delete My Account + Data</strong> — removes Firestore documents and Auth user with typed confirmation</li>
+              <li>GDPR/CCPA-aware: access, deletion, minimization, transparency</li>
+            </ul>
+          </div>
+          <div class="feature-row__visual">
+            <div class="phone-frame">
+              <div class="phone-frame__screen">
+                <div class="phone-topbar"><span>Im Not Lazy</span></div>
+                <div class="phone-content">
+                  <div class="mock-title">Settings</div>
+                  <div class="mock-sub">Manage your account.</div>
+                  <div class="mock-card"><strong style="font-size:0.75rem">Account</strong><p style="font-size:0.6875rem;color:var(--color-text-muted)">you@email.com</p></div>
+                  <div class="mock-card"><strong style="font-size:0.75rem">Appearance</strong><p style="font-size:0.6875rem;color:var(--color-text-muted)">Light mode</p></div>
+                  <div class="mock-card"><strong style="font-size:0.75rem">Your data</strong><p style="font-size:0.6875rem;color:var(--color-text-muted)">Email, check-ins, progress only.</p></div>
+                  <div class="mock-card" style="border-color:var(--color-error)"><strong style="font-size:0.75rem;color:var(--color-error)">Delete account</strong></div>
+                </div>
+                <div class="phone-nav">
+                  <span>Dashboard</span><span>Check-in</span><span>Setup</span><span>Learn</span><span class="active">Settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots gallery -->
+    <section class="section" id="screenshots">
+      <div class="container">
+        <p class="section__label">App screenshots</p>
+        <h2>See every screen</h2>
+        <p class="section__lead">Full walkthrough of the Im Not Lazy experience — mobile-first, warm design, teal accents.</p>
+        <div class="screenshot-grid">
+          <figure class="screenshot-card">
+            <img src="screenshots/onboarding.png" alt="Onboarding quiz screen showing app selection" width="360" height="640" loading="lazy" />
+            <figcaption>Onboarding Quiz</figcaption>
+            <p>Age confirmation, app selection, scroll hours, goals, and personalized detox path.</p>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="screenshots/wizard.png" alt="Setup wizard with Instagram steps" width="360" height="640" loading="lazy" />
+            <figcaption>Setup Wizard</figcaption>
+            <p>JSON-driven step-by-step guides with checkbox persistence and completion badges.</p>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="screenshots/dashboard.png" alt="Dashboard with streaks and usage chart" width="360" height="640" loading="lazy" />
+            <figcaption>Dashboard</figcaption>
+            <p>Streaks, reclaimed hours, human equivalents, and weekly usage trend.</p>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="screenshots/checkin.png" alt="Daily check-in with mood picker" width="360" height="640" loading="lazy" />
+            <figcaption>Daily Check-in</figcaption>
+            <p>Morning intention, mood rating, scroll time, evening reflection, and insights.</p>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="screenshots/learn.png" alt="Learn feed educational cards" width="360" height="640" loading="lazy" />
+            <figcaption>Learn Feed</figcaption>
+            <p>Educational cards on dopamine, attention economy, and algorithm design.</p>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="screenshots/settings.png" alt="Settings with delete account option" width="360" height="640" loading="lazy" />
+            <figcaption>Settings &amp; Privacy</figcaption>
+            <p>Theme toggle, data transparency, legal pages, and account deletion.</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--alt" id="how-it-works">
+      <div class="container">
+        <p class="section__label">How it works</p>
+        <h2>Four steps to reclaimed time</h2>
+        <p class="section__lead">No extreme detox. Just a structured path that meets you where you are.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Take the quiz</h3>
+            <p>Confirm you're 18+, pick your time-wasting apps, estimate scroll hours, and choose what you'd do with reclaimed time.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>Get your path</h3>
+            <p>Receive a personalized detox plan with prioritized recommendations — notification cuts, feed friction, time blocks, and more.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>Run the wizard</h3>
+            <p>Follow step-by-step setup guides for Instagram and YouTube. Check off each step as you complete it.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <h3>Check in daily</h3>
+            <p>Track mood, scroll time, and intentions. Watch your streak grow and see patterns emerge over weeks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section" id="privacy">
+      <div class="container">
+        <p class="section__label">Privacy &amp; trust</p>
+        <h2>Built with data minimization in mind</h2>
+        <p class="section__lead">We don't sell your data. We don't track you across the web. We store only what the app needs to function.</p>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>What we store</h3>
+            <p>Email, onboarding answers, wizard progress, daily check-ins, mood ratings, self-reported scroll hours, and streak stats. That's it.</p>
+          </div>
+          <div class="trust-card">
+            <h3>What we don't store</h3>
+            <p>No location, no contacts, no photos, no device fingerprinting, no third-party analytics, no ad tracking.</p>
+          </div>
+          <div class="trust-card">
+            <h3>Your rights</h3>
+            <p>Delete your account and all data anytime from Settings. GDPR and CCPA-friendly access, correction, and deletion flows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Ready to reclaim your time?</h2>
+      <p>Free forever. No credit card. Start with a 2-minute quiz.</p>
+      <a href="/onboarding" class="btn btn--primary btn--lg">Launch Im Not Lazy</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Im Not Lazy</h4>
+          <p>A free web app for college-age adults to gradually escape social media addiction and reclaim time — without shame or extreme detox tactics.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="/onboarding">Launch App</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Im Not Lazy. Built with React, Firebase, and care.</p>
+    </div>
+  </footer>
+</body>
+</html>

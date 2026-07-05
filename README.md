@@ -70,12 +70,21 @@ Open [http://localhost:5173](http://localhost:5173).
 npm run build
 ```
 
-Output goes to `dist/` — Vercel picks this up automatically.
+Output goes to `dist/` — Vercel picks this up automatically. The marketing website is copied to `dist/website/` and served at `/`.
+
+### Regenerate app screenshots
+
+```powershell
+npm run screenshots
+```
+
+This captures PNGs from `website/mockups/` into `website/screenshots/` for the product website gallery.
 
 ## App routes
 
 | Route | Description |
 |-------|-------------|
+| `/` | Product marketing website (features, screenshots, about) |
 | `/onboarding` | Age gate, auth, quiz, detox path |
 | `/wizard` | JSON-driven setup wizard (Instagram, YouTube) |
 | `/dashboard` | Streaks, usage trend, reclaimed hours |

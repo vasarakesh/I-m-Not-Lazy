@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "screenshots": "node scripts/generate-screenshots.mjs"
   },
   "dependencies": {
     "firebase": "^11.6.0",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
+    "puppeteer": "^24.6.0",
     "vite": "^6.3.1"
   }
 }
