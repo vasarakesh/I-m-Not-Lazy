@@ -1,0 +1,95 @@
+{
+  "platforms": [
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "intro": "Reduce feed friction and notification pull without deleting the app. These steps make mindless scrolling harder while keeping the app available when you actually need it.",
+      "steps": [
+        {
+          "id": "ig-notifications",
+          "title": "Turn off non-essential notifications",
+          "body": "Open Instagram → Profile → Menu (☰) → Notifications. Disable likes, comments, follower alerts, and live video notifications. Keep DMs on only if you use them for real conversations.",
+          "tip": "Notification badges are designed to pull you back. Removing them is the highest-leverage first step.",
+          "warning": null
+        },
+        {
+          "id": "ig-badge",
+          "title": "Remove the app badge count",
+          "body": "In your phone's Settings → Notifications → Instagram, turn off badge app icons. The red number on the icon is a major trigger for compulsive checking.",
+          "tip": "You can always check DMs when you choose to open the app.",
+          "warning": null
+        },
+        {
+          "id": "ig-homescreen",
+          "title": "Remove Instagram from your home screen",
+          "body": "Long-press the Instagram icon and remove it from your home screen. Move it to a folder on the last page, or delete the shortcut entirely and access via search when needed.",
+          "tip": "Every tap saved is a scroll session avoided. Friction works.",
+          "warning": "This feels uncomfortable at first. That discomfort usually fades within 3–5 days."
+        },
+        {
+          "id": "ig-following",
+          "title": "Clean up who you follow",
+          "body": "Spend 10 minutes unfollowing accounts that trigger comparison, envy, or mindless scrolling. Keep only accounts that genuinely add value or joy.",
+          "tip": "You don't need to unfollow everyone. Even removing 20 high-trigger accounts changes the feed significantly.",
+          "warning": null
+        },
+        {
+          "id": "ig-time-limit",
+          "title": "Set a daily time limit",
+          "body": "On iPhone: Settings → Screen Time → App Limits → Instagram. On Android: Settings → Digital Wellbeing → App Timers → Instagram. Start with your current average and reduce by 15 minutes each week.",
+          "tip": "A limit you occasionally exceed is still better than no limit at all.",
+          "warning": null
+        },
+        {
+          "id": "ig-grayscale",
+          "title": "Try grayscale mode (optional)",
+          "body": "Enable grayscale on your phone during study or work hours. Colorful feeds are designed to be visually addictive. Removing color reduces the pull significantly.",
+          "tip": "iPhone: Settings → Accessibility → Display → Color Filters. Android: Settings → Digital Wellbeing → Bedtime mode or developer options.",
+          "warning": null
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "title": "YouTube",
+      "intro": "YouTube's autoplay and Shorts are engineered for maximum watch time. These steps break the automatic consumption loop.",
+      "steps": [
+        {
+          "id": "yt-autoplay",
+          "title": "Disable autoplay",
+          "body": "Open YouTube → tap your profile → Settings → Autoplay. Turn off 'Autoplay next video' on both Wi-Fi and mobile data.",
+          "tip": "Autoplay is the single biggest driver of 'just one more video' sessions.",
+          "warning": null
+        },
+        {
+          "id": "yt-shorts",
+          "title": "Hide or limit Shorts",
+          "body": "On mobile, avoid the Shorts tab entirely. On desktop, use a browser extension to hide Shorts, or simply never click the Shorts icon. If you can't avoid it, set a 15-minute Shorts timer.",
+          "tip": "Shorts use the same variable-reward loop as TikTok. Treat them as a separate app with stricter limits.",
+          "warning": null
+        },
+        {
+          "id": "yt-subscriptions",
+          "title": "Audit your subscriptions",
+          "body": "Review your subscribed channels. Unsubscribe from channels you watch passively without learning or enjoying. Keep educational and genuinely entertaining channels only.",
+          "tip": "Your subscription feed should feel like a curated library, not an infinite stream.",
+          "warning": null
+        },
+        {
+          "id": "yt-bedtime",
+          "title": "No YouTube before bed",
+          "body": "Set a personal rule: no YouTube after 9 PM (adjust to your schedule). Replace the habit with reading, stretching, or journaling for 20 minutes.",
+          "tip": "Evening YouTube sessions are the hardest to stop because you're tired and decision-making is low.",
+          "warning": "Blue light and stimulating content can disrupt sleep even if the content feels relaxing."
+        },
+        {
+          "id": "yt-watch-later",
+          "title": "Use Watch Later instead of watching now",
+          "body": "When you find an interesting video during the day, add it to Watch Later instead of watching immediately. Review your Watch Later list once per week and watch only what still feels worth it.",
+          "tip": "Most videos lose their urgency after 24 hours. This filters out impulse watching.",
+          "warning": null
+        }
+      ]
+    }
+  ]
+}

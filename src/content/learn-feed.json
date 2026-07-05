@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "id": "dopamine-loops",
+      "title": "Why scrolling feels impossible to stop",
+      "category": "dopamine",
+      "summary": "Variable rewards keep your brain guessing — and staying.",
+      "readingTimeMinutes": 3,
+      "body": "Social media feeds use a psychological pattern called variable ratio reinforcement — the same mechanism behind slot machines. You never know when the next interesting post, like, or message will appear, so your brain keeps checking.\n\nThis isn't a willpower failure. It's a designed system. The apps you use employ teams of engineers and behavioral psychologists whose job is to maximize time-on-app.\n\nUnderstanding this doesn't make the pull disappear, but it removes the shame. You're not lazy. You're responding normally to an abnormal stimulus."
+    },
+    {
+      "id": "attention-economy",
+      "title": "Your attention is the product being sold",
+      "category": "attention",
+      "summary": "If you're not paying, you're the product.",
+      "readingTimeMinutes": 4,
+      "body": "Social media platforms are free because advertisers pay for your attention. Every minute you spend scrolling generates ad impressions and data points about your preferences, mood, and behavior.\n\nThe business model creates a direct conflict: what's best for the platform (more time on app) is often worst for you (less time for sleep, study, relationships, and rest).\n\nThis doesn't mean you need to quit everything. It means being intentional about which apps earn your time and which ones take it by default."
+    },
+    {
+      "id": "algorithm-design",
+      "title": "How algorithms keep you watching",
+      "category": "algorithms",
+      "summary": "The feed isn't neutral — it's optimized for engagement, not wellbeing.",
+      "readingTimeMinutes": 3,
+      "body": "Recommendation algorithms don't show you what's most important or true. They show you what keeps you engaged longest. This often means emotionally charged content, outrage, comparison triggers, and infinite novelty.\n\nYouTube's autoplay, Instagram's Reels, and TikTok's For You page all use similar systems: predict what you'll watch next based on microseconds of engagement data.\n\nKnowing this helps you see the feed for what it is — a machine optimized for someone else's metrics — not a window into what you actually need."
+    },
+    {
+      "id": "notification-triggers",
+      "title": "Why notifications hijack your focus",
+      "category": "attention",
+      "summary": "Each ping is a micro-interruption that costs more than you think.",
+      "readingTimeMinutes": 2,
+      "body": "Research consistently shows that it takes 15–23 minutes to fully refocus after an interruption. A notification that takes 5 seconds to check can cost you half an hour of deep work.\n\nApp notifications are designed to create urgency — red badges, vibration patterns, and preview text that makes ignoring them feel like missing something important.\n\nDisabling non-essential notifications isn't about being unavailable. It's about choosing when to be available instead of reacting to every ping."
+    },
+    {
+      "id": "social-comparison",
+      "title": "The comparison trap in your feed",
+      "category": "dopamine",
+      "summary": "Everyone's highlight reel vs. your behind-the-scenes.",
+      "readingTimeMinutes": 3,
+      "body": "Social media shows curated highlights — vacations, achievements, perfect meals, gym progress. Your brain compares these polished snapshots against your full, unfiltered daily experience.\n\nThis comparison happens automatically and often unconsciously. You might leave a scrolling session feeling worse without knowing exactly why.\n\nReducing comparison triggers — unfollowing accounts that make you feel 'behind' — is one of the most effective single changes you can make."
+    },
+    {
+      "id": "sleep-and-screens",
+      "title": "Late-night scrolling and your sleep",
+      "category": "attention",
+      "summary": "The hour before bed matters more than total screen time.",
+      "readingTimeMinutes": 3,
+      "body": "Blue light suppresses melatonin, but the bigger sleep disruptor is mental stimulation. Engaging content — arguments, exciting videos, social drama — activates your nervous system when it should be winding down.\n\nMany people report that their worst scrolling happens in bed, when willpower is lowest and the phone is right there.\n\nA simple rule — phone out of the bedroom — addresses the highest-risk window without requiring willpower at your weakest moment."
+    },
+    {
+      "id": "friction-design",
+      "title": "Why making things harder actually works",
+      "category": "algorithms",
+      "summary": "Small barriers between you and the app break automatic habits.",
+      "readingTimeMinutes": 2,
+      "body": "Habitual phone use is often automatic — you pick up your phone and your thumb opens Instagram before you've decided to. This is called a 'trigger-routine-reward' loop.\n\nAdding friction — removing the app from your home screen, requiring a password to open it, enabling grayscale — interrupts the automatic loop. You have to make a conscious choice instead of reacting on autopilot.\n\nThese changes feel annoying at first. That annoyance is the point. It means the automatic habit is breaking."
+    },
+    {
+      "id": "replacement-not-just-removal",
+      "title": "What to do with reclaimed time",
+      "category": "dopamine",
+      "summary": "Removing a habit without a replacement leaves an empty space.",
+      "readingTimeMinutes": 3,
+      "body": "Cutting scroll time works best when you have something specific to do instead. 'Don't scroll' is a negative goal. 'Read for 20 minutes before bed' or 'Walk after dinner' is a positive replacement.\n\nThe void left by reduced scrolling often gets filled by a different passive habit (TV, snacking, another app) unless you plan ahead.\n\nThink about what you said you wanted more time for — study, fitness, creative work, sleep, real social connection — and schedule it into the time you're reclaiming."
+    }
+  ]
+}

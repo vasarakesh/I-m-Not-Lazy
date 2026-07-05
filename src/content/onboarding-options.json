@@ -1,0 +1,27 @@
+{
+  "apps": [
+    { "id": "instagram", "label": "Instagram" },
+    { "id": "tiktok", "label": "TikTok" },
+    { "id": "youtube", "label": "YouTube" },
+    { "id": "twitter", "label": "X / Twitter" },
+    { "id": "reddit", "label": "Reddit" },
+    { "id": "snapchat", "label": "Snapchat" },
+    { "id": "facebook", "label": "Facebook" },
+    { "id": "other", "label": "Other" }
+  ],
+  "hoursOptions": [
+    { "value": 1, "label": "Less than 1 hour" },
+    { "value": 2, "label": "1–2 hours" },
+    { "value": 3, "label": "2–4 hours" },
+    { "value": 5, "label": "4–6 hours" },
+    { "value": 7, "label": "6+ hours" }
+  ],
+  "reclaimedGoals": [
+    { "id": "study", "label": "Study or learn something new" },
+    { "id": "fitness", "label": "Exercise or move more" },
+    { "id": "social", "label": "Spend time with people in person" },
+    { "id": "creative", "label": "Create something (art, writing, music)" },
+    { "id": "sleep", "label": "Sleep better" },
+    { "id": "work", "label": "Focus on work or side projects" }
+  ]
+}
