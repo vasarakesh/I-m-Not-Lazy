@@ -285,27 +285,5 @@
         }
       ]
     }
-  ],
-  "deviceControls": [
-    {
-      "id": "homescreen",
-      "title": "Remove apps from the home screen",
-      "body": "Move Instagram, TikTok, YouTube, and Reddit into a folder on the last page — or delete the shortcut and open via search only when you have a reason."
-    },
-    {
-      "id": "grayscale",
-      "title": "Use grayscale during focus hours",
-      "body": "iPhone: Settings → Accessibility → Display & Text Size → Color Filters. Android: Digital Wellbeing Bedtime mode or developer grayscale. Color is part of the pull."
-    },
-    {
-      "id": "focus-modes",
-      "title": "Block apps during study or work blocks",
-      "body": "Use Focus modes (iOS) or Focus mode / App timers (Android) to block social apps during your two highest-value windows of the day."
-    },
-    {
-      "id": "charge-elsewhere",
-      "title": "Charge your phone outside the bedroom",
-      "body": "Late-night scrolling is when willpower is lowest. Removing the phone from reach closes the highest-risk window without needing more willpower."
-    }
   ]
 }

@@ -113,6 +113,16 @@ a:hover { text-decoration: underline; }
 
 .site-nav a:hover { color: var(--color-ink); }
 
+.site-nav a.btn--primary {
+  color: #fff;
+  font-size: 0.92rem;
+}
+
+.site-nav a.btn--primary:hover {
+  color: #fff;
+  background: var(--color-accent-hover);
+}
+
 .menu-toggle {
   display: none;
   background: var(--color-surface-solid);
@@ -205,7 +215,7 @@ a:hover { text-decoration: underline; }
   font-size: clamp(1.55rem, 3.4vw, 2.35rem);
   font-weight: 700;
   line-height: 1.2;
-  max-width: 18ch;
+  max-width: 22ch;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
 }
@@ -443,6 +453,18 @@ a:hover { text-decoration: underline; }
   color: var(--color-ink);
 }
 
+.calc-results__reassure {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(15, 118, 110, 0.1);
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  color: var(--color-ink);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
 .calc-results__next a { font-weight: 700; }
 
 /* Platform controls */
@@ -569,13 +591,6 @@ a:hover { text-decoration: underline; }
   background: var(--color-accent-soft);
 }
 
-.device-block h3 {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  margin-bottom: 14px;
-  letter-spacing: -0.02em;
-}
-
 /* Insights */
 .insight-grid {
   display: grid;
@@ -591,6 +606,46 @@ a:hover { text-decoration: underline; }
 }
 
 .insight p { color: var(--color-muted); }
+
+.about__note {
+  max-width: 42rem;
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  padding: 18px 20px;
+  border-left: 3px solid var(--color-accent);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.future-card {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  backdrop-filter: blur(8px);
+}
+
+.future-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.future-card p { color: var(--color-muted); }
+
+.future-footnote {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  max-width: 40rem;
+}
 
 /* Closing */
 .closing {
@@ -695,6 +750,7 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 860px) {
   .insight-grid,
+  .future-grid,
   .footer-grid { grid-template-columns: 1fr; }
 
   .menu-toggle { display: inline-flex; }

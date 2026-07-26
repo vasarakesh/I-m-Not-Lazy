@@ -143,19 +143,23 @@
     var eyebrow;
     var headline;
     var lead;
+    var reassurance;
 
     if (wasted) {
-      eyebrow = 'Mostly empty scroll time';
-      headline = 'You could have used ' + formatHours(hours) + ' on something that compounds.';
-      lead = 'You said you didn’t learn much and weren’t following through on anything intentional. That time still belonged to you — here is what the same window could look like if you redirected even part of it.';
+      eyebrow = 'Unintentional scroll time';
+      headline = 'Those ' + formatHours(hours) + ' could have gone toward something meaningful.';
+      lead = 'You said you didn’t learn much and weren’t following through on anything intentional. That’s common — and noticing it is already a step. Here’s what the same amount of time can look like when you slowly redirect it.';
+      reassurance = 'It’s okay for today. You’re not behind and you don’t need to overhaul everything tonight. Next time you open an app, try to follow something useful, learn one small thing, or spend even part of that window on something that matters to you.';
     } else if (mixed) {
       eyebrow = 'Mixed return on attention';
-      headline = 'Keep the useful part. Reclaim the rest of the ' + formatHours(hours) + '.';
-      lead = 'Some of that session may have been worthwhile — but habit scrolling still ate into time you could spend building skill, health, or projects. Use the swaps below for the hours that weren’t intentional.';
+      headline = 'Keep the useful part. Gently reclaim the rest of the ' + formatHours(hours) + '.';
+      lead = 'Some of that session may have been worthwhile — and that’s fine. Habit scrolling still took a share you could slowly move toward skill, health, or projects. The swaps below are invitations, not demands.';
+      reassurance = 'It’s okay for today. Change sticks when it’s gradual. Tomorrow, try to follow something useful for a bit longer — or notice one moment where you choose a meaningful alternative instead.';
     } else {
       eyebrow = 'Intentional use';
       headline = 'Nice — you got something out of those ' + formatHours(hours) + '.';
-      lead = 'When a session is purposeful, it counts. Still, locking in feed controls and time limits helps the next open stay intentional instead of automatic.';
+      lead = 'When a session is purposeful, it counts. Keep building that muscle: open apps with a reason, follow through on something useful, and let empty scrolls get rarer over time.';
+      reassurance = 'It’s okay to keep refining this slowly. You’re changing how you use attention — not punishing yourself for imperfect days.';
     }
 
     var swaps = selectedGoals.slice(0, 4).map(function (id) {
@@ -170,16 +174,15 @@
     }).join('');
 
     var weekly = Math.round(hours * 7 * 10) / 10;
-    var next = wasted
-      ? 'Next step: pick one swap for tomorrow, then <a href="#controls">tighten recommendations</a> on the apps that usually pull you in.'
-      : 'Next step: <a href="#controls">set feed controls</a> so useful sessions stay useful — and empty ones get harder to fall into.';
+    var next = 'When you’re ready, <a href="#controls">explore feed controls</a> — one small platform tweak at a time is enough.';
 
     return (
       '<p class="calc-results__eyebrow' + (wasted ? '' : ' is-good') + '">' + escapeHtml(eyebrow) + '</p>' +
       '<h3>' + escapeHtml(headline) + '</h3>' +
       '<p class="calc-results__lead">' + escapeHtml(lead) + '</p>' +
       '<div class="swap-grid">' + swaps + '</div>' +
-      '<p class="calc-results__lead">At this daily pace, that’s about <strong>' + escapeHtml(String(weekly)) + ' hours per week</strong> — enough to make visible progress on a skill or project if even half of it gets redirected.</p>' +
+      '<p class="calc-results__lead">At this daily pace, that’s about <strong>' + escapeHtml(String(weekly)) + ' hours per week</strong> — enough to make visible progress on a skill or project if even a portion gets redirected over time.</p>' +
+      '<p class="calc-results__reassure">' + escapeHtml(reassurance) + '</p>' +
       '<p class="calc-results__next">' + next + '</p>'
     );
   }
@@ -231,8 +234,7 @@
   function initControls() {
     var tabsRoot = document.getElementById('platform-tabs');
     var panel = document.getElementById('platform-panel');
-    var deviceRoot = document.getElementById('device-controls');
-    if (!tabsRoot || !panel || !deviceRoot) return;
+    if (!tabsRoot || !panel) return;
 
     fetch('controls.json')
       .then(function (res) {
@@ -244,22 +246,6 @@
         var checks = loadChecks();
         var activeId = platforms[0] ? platforms[0].id : null;
         var activeFilter = 'all';
-
-        function renderDevice() {
-          deviceRoot.innerHTML = (data.deviceControls || []).map(function (item) {
-            var key = 'device:' + item.id;
-            var done = !!checks[key];
-            return (
-              '<label class="control-item' + (done ? ' is-done' : '') + '">' +
-                '<input type="checkbox" data-check="' + escapeHtml(key) + '"' + (done ? ' checked' : '') + ' />' +
-                '<div>' +
-                  '<div class="control-item__title">' + escapeHtml(item.title) + '</div>' +
-                  '<div class="control-item__body">' + escapeHtml(item.body) + '</div>' +
-                '</div>' +
-              '</label>'
-            );
-          }).join('');
-        }
 
         function renderTabs() {
           tabsRoot.innerHTML = platforms.map(function (p) {
@@ -349,9 +335,7 @@
 
         renderTabs();
         renderPanel();
-        renderDevice();
         bindCheckboxes(panel);
-        bindCheckboxes(deviceRoot);
       })
       .catch(function () {
         panel.innerHTML = '<p>Platform controls could not load. Check that <code>controls.json</code> is available.</p>';
@@ -361,7 +345,7 @@
   /* ---------- Scroll reveal ---------- */
 
   function initReveal() {
-    var nodes = document.querySelectorAll('.section, .insight, .calc__step, .device-block');
+    var nodes = document.querySelectorAll('.section, .insight, .calc__step');
     nodes.forEach(function (el, i) {
       el.classList.add('reveal');
       el.style.setProperty('--reveal-delay', ((i % 4) * 70) + 'ms');
