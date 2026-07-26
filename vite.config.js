@@ -23,6 +23,8 @@ export default defineConfig(({ command }) => ({
         const websiteSrc = resolve(__dirname, 'website');
         mkdirSync(distRoot, { recursive: true });
         cpSync(websiteSrc, distRoot, { recursive: true });
+        // Ship GPL license text with the public site (Vercel / static hosting)
+        cpSync(resolve(__dirname, 'LICENSE'), resolve(distRoot, 'LICENSE'));
       },
     },
   ],

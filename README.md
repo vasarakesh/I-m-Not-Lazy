@@ -134,4 +134,13 @@ Nexus — warm beige surfaces, teal accent, light/dark mode, mobile-first, left-
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Copyright (C) 2026 Im Not Lazy contributors.
+
+This project is free software licensed under the **GNU General Public License v3.0**.
+See [LICENSE](LICENSE) for the full terms. There is **no warranty**.
+
+GitHub license metadata: [GPL-3.0](https://github.com/vasarakesh/I-m-Not-Lazy).
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for how to report vulnerabilities and secrets-handling guidance.
