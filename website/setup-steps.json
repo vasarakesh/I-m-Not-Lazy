@@ -1,0 +1,130 @@
+{
+  "platforms": [
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "intro": "Reduce notification pull and set gentle daily boundaries without deleting the app.",
+      "steps": [
+        {
+          "id": "ig-notifications",
+          "title": "Turn off non-essential notifications",
+          "body": "Profile → ☰ → Settings → Notifications → disable Likes, Comments, Followers, Live videos.",
+          "tip": "Keep DMs on if you use them for real conversations.",
+          "warning": null
+        },
+        {
+          "id": "ig-sleep-mode",
+          "title": "Enable Sleep Mode",
+          "body": "Profile → ☰ → How you use Instagram → Time management → Sleep Mode → set start/end time and days.",
+          "tip": null,
+          "warning": "Sleep Mode mutes notifications but does not block app opening."
+        },
+        {
+          "id": "ig-daily-reminder",
+          "title": "Set a daily time reminder",
+          "body": "Profile → ☰ → Your Activity → set reminder below your current daily average.",
+          "tip": null,
+          "warning": null
+        }
+      ]
+    },
+    {
+      "id": "tiktok",
+      "title": "TikTok",
+      "intro": "Use Screen Time tools to interrupt automatic scrolling before it runs away with your evening.",
+      "steps": [
+        {
+          "id": "tt-screen-time",
+          "title": "Enable Screen Time limit",
+          "body": "Profile → ☰ → Settings and privacy → Time and Wellbeing → Screen Time → set a daily limit. Start at 30–45 minutes.",
+          "tip": null,
+          "warning": null
+        },
+        {
+          "id": "tt-breaks",
+          "title": "Turn on Screen Time Breaks",
+          "body": "Same menu → Screen Time Breaks → choose a 10, 20, or 30 minute interval.",
+          "tip": null,
+          "warning": null
+        },
+        {
+          "id": "tt-notifications",
+          "title": "Disable engagement push alerts",
+          "body": "Settings and privacy → Notifications → turn off Likes, Comments, and New followers.",
+          "tip": null,
+          "warning": null
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "title": "YouTube",
+      "intro": "Break the autoplay loop and add gentle reminders that help you leave when you meant to.",
+      "steps": [
+        {
+          "id": "yt-autoplay",
+          "title": "Turn off Autoplay",
+          "body": "Use the Home feed Autoplay toggle, and Settings → General → Autoplay next video.",
+          "tip": null,
+          "warning": null
+        },
+        {
+          "id": "yt-break",
+          "title": "Set a Take a Break reminder",
+          "body": "Profile → Settings → Time watched → Reminders → every 30–60 minutes.",
+          "tip": null,
+          "warning": null
+        },
+        {
+          "id": "yt-bedtime",
+          "title": "Set a Bedtime reminder",
+          "body": "Same menu → Reminders → Bedtime → set a cutoff hour.",
+          "tip": null,
+          "warning": null
+        }
+      ]
+    },
+    {
+      "id": "youtube-shorts",
+      "title": "YouTube Shorts",
+      "intro": "Shorts are a separate high-risk feed. Treat them with stricter limits than regular YouTube.",
+      "steps": [
+        {
+          "id": "shorts-isolate",
+          "title": "Isolate Shorts usage",
+          "body": "Time watched → tap the Shorts tab in the usage chart before setting a limit.",
+          "tip": null,
+          "warning": "Shorts autoplay loops continuously — the highest-risk feed for time loss."
+        },
+        {
+          "id": "shorts-shelf",
+          "title": "Remove Shorts shelf from home",
+          "body": "Settings → General → toggle off Shorts recommendations where available.",
+          "tip": null,
+          "warning": null
+        }
+      ]
+    },
+    {
+      "id": "facebook",
+      "title": "Facebook",
+      "intro": "Quiet Mode and daily reminders create real friction — not just quieter notifications.",
+      "steps": [
+        {
+          "id": "fb-quiet-mode",
+          "title": "Enable Quiet Mode",
+          "body": "☰ → Settings & privacy → Settings → Your Time on Facebook → Manage Your Time → Quiet Mode → set a schedule.",
+          "tip": "This blocks reopening the app during set hours, not just notifications.",
+          "warning": null
+        },
+        {
+          "id": "fb-daily-reminder",
+          "title": "Set Daily Time Reminder",
+          "body": "Same menu → Daily Time Reminder → set below your current daily average shown in See Time.",
+          "tip": null,
+          "warning": null
+        }
+      ]
+    }
+  ]
+}
