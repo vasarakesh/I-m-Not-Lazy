@@ -285,15 +285,32 @@
             .map(function (c) {
               var key = platform.id + ':' + c.id;
               var done = !!checks[key];
+              var actions = '';
+              if (c.link) {
+                actions +=
+                  '<a class="control-link" href="' + escapeHtml(c.link) + '" target="_blank" rel="noopener noreferrer">' +
+                  escapeHtml(c.linkLabel || 'Open settings') +
+                  '</a>';
+              }
+              if (c.helpLink) {
+                actions +=
+                  '<a class="control-link control-link--secondary" href="' + escapeHtml(c.helpLink) + '" target="_blank" rel="noopener noreferrer">' +
+                  escapeHtml(c.helpLabel || 'Help guide') +
+                  '</a>';
+              }
               return (
-                '<label class="control-item' + (done ? ' is-done' : '') + '">' +
-                  '<input type="checkbox" data-check="' + escapeHtml(key) + '"' + (done ? ' checked' : '') + ' />' +
-                  '<div>' +
+                '<div class="control-item' + (done ? ' is-done' : '') + '">' +
+                  '<label class="control-item__check">' +
+                    '<input type="checkbox" data-check="' + escapeHtml(key) + '"' + (done ? ' checked' : '') + ' />' +
+                    '<span class="visually-hidden">Mark done: ' + escapeHtml(c.title) + '</span>' +
+                  '</label>' +
+                  '<div class="control-item__body-wrap">' +
                     '<div class="control-item__title">' + escapeHtml(c.title) + '</div>' +
                     '<div class="control-item__body">' + escapeHtml(c.body) + '</div>' +
                     '<span class="control-item__tag">' + escapeHtml(CATEGORY_LABELS[c.category] || c.category) + '</span>' +
+                    (actions ? '<div class="control-actions">' + actions + '</div>' : '') +
                   '</div>' +
-                '</label>'
+                '</div>'
               );
             }).join('');
 

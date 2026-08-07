@@ -559,8 +559,13 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--color-border);
 }
 
-.control-item input {
-  margin-top: 4px;
+.control-item__check {
+  display: flex;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.control-item__check input {
   width: 1.1rem;
   height: 1.1rem;
   accent-color: var(--color-accent);
@@ -584,6 +589,43 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-accent);
+}
+
+.control-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.control-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.control-link:hover {
+  background: var(--color-accent-hover);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.control-link--secondary {
+  background: transparent;
+  color: var(--color-accent) !important;
+  border: 1px solid var(--color-accent);
+}
+
+.control-link--secondary:hover {
+  background: var(--color-accent-soft);
+  color: var(--color-accent) !important;
 }
 
 .control-item.is-done {

@@ -3,74 +3,102 @@
     {
       "id": "instagram",
       "title": "Instagram",
-      "summary": "You cannot fully disable recommendations, but you can switch to Following, reset suggested content, and cut notification pull.",
+      "summary": "You cannot fully disable recommendations, but you can switch to Following, reset suggested content, and cut notification pull. Use Open links to jump into Instagram or Accounts Center — some screens only finish inside the mobile app.",
       "controls": [
         {
           "id": "ig-following",
           "title": "Use the Following feed",
           "body": "Open Instagram → tap For you at the top → select Following. This shows posts from people you follow in a more chronological order instead of the algorithmic For You mix.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.instagram.com/",
+          "linkLabel": "Open Instagram"
         },
         {
           "id": "ig-reset",
           "title": "Reset suggested content",
           "body": "Profile → ☰ → Content preferences → Reset suggested content. This clears signals used for Reels, Explore, and suggested posts without unfollowing anyone.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.instagram.com/accounts/edit/",
+          "linkLabel": "Open Instagram settings",
+          "helpLink": "https://help.instagram.com/",
+          "helpLabel": "Instagram Help"
         },
         {
           "id": "ig-not-interested",
           "title": "Mark posts Not interested",
           "body": "On any suggested post or Reel, tap ⋯ → Not interested (or Hide). Repeat on topics that waste your time so the algorithm gets fewer wrong signals.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.instagram.com/",
+          "linkLabel": "Open Instagram feed"
         },
         {
           "id": "ig-notifications",
           "title": "Turn off non-DM notifications",
           "body": "Profile → ☰ → Notifications. Disable likes, comments, follower alerts, and live videos. Keep message alerts only if you need them for real conversations.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://accountscenter.instagram.com/",
+          "linkLabel": "Open Accounts Center",
+          "helpLink": "https://www.instagram.com/accounts/notification_settings/",
+          "helpLabel": "Notification settings"
         },
         {
           "id": "ig-time",
           "title": "Set a daily time reminder",
-          "body": "Profile → Your activity → Time management → set a reminder below your current average. Pair it with a phone Screen Time / Digital Wellbeing limit for a hard stop.",
-          "category": "limits"
+          "body": "Profile → Your activity → Time management → set a reminder below your current average. This screen is app-only on most devices — open Instagram, then follow the guide if the menu looks different.",
+          "category": "limits",
+          "link": "https://www.instagram.com/",
+          "linkLabel": "Open Instagram",
+          "helpLink": "https://help.instagram.com/195902884574087",
+          "helpLabel": "Time spent guide"
         }
       ]
     },
     {
       "id": "tiktok",
       "title": "TikTok",
-      "summary": "TikTok lets you turn off personalized feeds and refresh the For You page — one of the stronger built-in controls.",
+      "summary": "TikTok lets you turn off personalized feeds and refresh the For You page — one of the stronger built-in controls. Links open TikTok; finish Screen Time and Content preferences inside the app.",
       "controls": [
         {
           "id": "tt-personalized",
           "title": "Turn off Personalized feeds",
           "body": "Profile → ☰ → Settings and privacy → Content preferences → turn Personalized feeds Off. Bonus: also turn Personalized search Off.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.tiktok.com/setting",
+          "linkLabel": "Open TikTok settings"
         },
         {
           "id": "tt-refresh",
           "title": "Refresh your For You feed",
           "body": "Settings and privacy → Content preferences → Refresh your For You feed. Use this when the feed feels junked up, then be selective about what you watch next.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.tiktok.com/setting",
+          "linkLabel": "Open TikTok settings"
         },
         {
           "id": "tt-following",
           "title": "Prefer the Following tab",
           "body": "Open the Following tab instead of For You when you only want updates from people you chose to follow.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.tiktok.com/following",
+          "linkLabel": "Open Following feed"
         },
         {
           "id": "tt-screen-time",
           "title": "Enable Screen Time limits and breaks",
           "body": "Settings and privacy → Screen time → set a daily limit (start at 30–45 minutes) and turn on Screen Time Breaks every 10–30 minutes.",
-          "category": "limits"
+          "category": "limits",
+          "link": "https://www.tiktok.com/setting",
+          "linkLabel": "Open TikTok settings",
+          "helpLink": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/screen-time",
+          "helpLabel": "Screen Time help"
         },
         {
           "id": "tt-notifications",
           "title": "Mute engagement notifications",
           "body": "Settings and privacy → Notifications → turn off Likes, Comments, and New followers so the app stops pulling you back mid-focus.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.tiktok.com/setting/notification",
+          "linkLabel": "Open notification settings"
         }
       ]
     },
@@ -83,37 +111,53 @@
           "id": "yt-subscriptions",
           "title": "Open Subscriptions instead of Home",
           "body": "On mobile, tap Subscriptions in the bottom bar. On desktop, open Subscriptions from the left menu and bookmark it. This shows channels you chose, in chronological order.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.youtube.com/feed/subscriptions",
+          "linkLabel": "Open Subscriptions"
         },
         {
           "id": "yt-autoplay",
           "title": "Turn off Autoplay",
           "body": "While watching a video, turn Autoplay off at the bottom of the player. Also check Settings → Playback and performance / General → Autoplay next video.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.youtube.com/account",
+          "linkLabel": "Open YouTube settings"
         },
         {
           "id": "yt-history",
           "title": "Pause or clear watch & search history",
-          "body": "Go to myactivity.google.com (or YouTube → History → Manage history). Delete recent history, set auto-delete (e.g. 3 months), or pause watch/search history so new watches stop training recommendations.",
-          "category": "algorithm"
+          "body": "Open YouTube History or Google My Activity. Delete recent history, set auto-delete (e.g. 3 months), or pause watch/search history so new watches stop training recommendations.",
+          "category": "algorithm",
+          "link": "https://www.youtube.com/feed/history",
+          "linkLabel": "Open YouTube History",
+          "helpLink": "https://myactivity.google.com/product/youtube",
+          "helpLabel": "Manage in Google My Activity"
         },
         {
           "id": "yt-not-interested",
           "title": "Use Not interested / Don’t recommend channel",
           "body": "On any Home recommendation, tap ⋯ → Not interested or Don’t recommend channel. This is the fastest way to prune junk without deleting your account.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.youtube.com/",
+          "linkLabel": "Open YouTube Home"
         },
         {
           "id": "yt-shorts",
           "title": "Avoid or time-limit Shorts",
           "body": "Skip the Shorts tab. If you use Shorts, set a separate 15-minute phone limit. Shorts use the same variable-reward loop as TikTok.",
-          "category": "limits"
+          "category": "limits",
+          "link": "https://www.youtube.com/feed/subscriptions",
+          "linkLabel": "Prefer Subscriptions instead"
         },
         {
           "id": "yt-break",
           "title": "Set Take a Break and bedtime reminders",
           "body": "Profile → Settings → General / Time watched → Reminders. Set a break every 30–60 minutes and a bedtime reminder so evening sessions have an exit ramp.",
-          "category": "limits"
+          "category": "limits",
+          "link": "https://www.youtube.com/account",
+          "linkLabel": "Open YouTube settings",
+          "helpLink": "https://support.google.com/youtube/answer/9001424",
+          "helpLabel": "Take a Break help"
         }
       ]
     },
@@ -125,26 +169,36 @@
         {
           "id": "x-following",
           "title": "Switch to Following",
-          "body": "At the top of Home, tap Following instead of For you. This is the main way to escape the algorithmic mix — you have to reselect it each session on many clients.",
-          "category": "feed"
+          "body": "At the top of Home, tap Following instead of For you. This is the main way to escape the algorithmic mix — you may need to reselect it each session.",
+          "category": "feed",
+          "link": "https://x.com/home",
+          "linkLabel": "Open X Home"
         },
         {
           "id": "x-interests",
           "title": "Remove inferred interests",
           "body": "Settings and privacy → Privacy and safety → Content you see → Interests. Uncheck topics you do not want shaping your feed.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://x.com/settings/your_twitter_data/twitter_interests",
+          "linkLabel": "Open Interests settings"
         },
         {
           "id": "x-ads",
           "title": "Trim ads preferences",
           "body": "Privacy and safety → Ads preferences. Uncheck options you do not want used for targeting. Also mute or block ads you repeatedly dislike.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://x.com/settings/ads_preferences",
+          "linkLabel": "Open Ads preferences"
         },
         {
           "id": "x-mute",
           "title": "Mute and unfollow high-scroll accounts",
           "body": "Mute keywords, phrases, and accounts that trigger endless threads. Unfollow accounts you open only out of habit.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://x.com/settings/muted_keywords",
+          "linkLabel": "Open muted keywords",
+          "helpLink": "https://x.com/settings/muted_accounts",
+          "helpLabel": "Muted accounts"
         }
       ]
     },
@@ -157,25 +211,35 @@
           "id": "fb-feeds",
           "title": "Open the Feeds view",
           "body": "Menu → Feeds (near the bottom of the menu). This shows recent posts from friends and pages you follow with far less algorithmic junk. Bookmark it on desktop if you can.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.facebook.com/feed",
+          "linkLabel": "Open Facebook Feeds"
         },
         {
           "id": "fb-favorites",
           "title": "Use Favorites for people you actually care about",
           "body": "Menu → Feeds → Favorites (or Home feed preferences). Pin close friends and important pages so they surface without the full Home algorithm.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.facebook.com/feed",
+          "linkLabel": "Open Feeds / Favorites"
         },
         {
           "id": "fb-snooze",
           "title": "Snooze or Unfollow noisy sources",
           "body": "On any post → ⋯ → Snooze for 30 days or Unfollow. This cleans the feed without ending friendships.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.facebook.com/",
+          "linkLabel": "Open Facebook"
         },
         {
           "id": "fb-quiet",
           "title": "Schedule Quiet Mode",
           "body": "Menu → Settings → Quiet Mode (or Digital Wellbeing tools). Mute notifications during study/work blocks and evenings.",
-          "category": "limits"
+          "category": "limits",
+          "link": "https://www.facebook.com/settings",
+          "linkLabel": "Open Facebook settings",
+          "helpLink": "https://www.facebook.com/help/160068914429197",
+          "helpLabel": "Quiet Mode help"
         }
       ]
     },
@@ -188,25 +252,33 @@
           "id": "rd-home-recs",
           "title": "Disable Home feed recommendations",
           "body": "Avatar → Settings → Account settings → turn off Enable home feed recommendations (wording may vary slightly by app version). Your Home should lean toward subscribed communities.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.reddit.com/settings/account",
+          "linkLabel": "Open account settings"
         },
         {
           "id": "rd-sort",
           "title": "Sort by New or Top — not Best",
           "body": "In each subreddit, change the sort from Best/Hot to New or Top (day/week). This reduces engagement-optimized ranking.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.reddit.com/",
+          "linkLabel": "Open Reddit Home"
         },
         {
           "id": "rd-unsubscribe",
           "title": "Unsubscribe from doomscroll subs",
           "body": "Leave communities that reliably pull you into multi-hour rabbit holes. Keep learning, hobby, and utility subs only.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.reddit.com/subreddits/mine",
+          "linkLabel": "Manage communities"
         },
         {
           "id": "rd-notifications",
           "title": "Cut Reddit push notifications",
           "body": "Settings → Notifications. Disable inbox pings you do not need. Use email digests only if useful.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.reddit.com/settings/notifications",
+          "linkLabel": "Open notification settings"
         }
       ]
     },
@@ -219,44 +291,60 @@
           "id": "li-recent-temp",
           "title": "Switch to Most recent (session)",
           "body": "Above the feed, open Select feed view → Most recent first. Use this when you only want updates from your network.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.linkedin.com/feed/?sortBy=RECENT",
+          "linkLabel": "Open Most recent feed"
         },
         {
           "id": "li-recent-perm",
           "title": "Make Most recent your default",
           "body": "Me → Settings & Privacy → Feed preferences → Most recent posts. LinkedIn is unusually good at letting this stick.",
-          "category": "feed"
+          "category": "feed",
+          "link": "https://www.linkedin.com/mypreferences/d/categories/feed-preferences",
+          "linkLabel": "Open feed preferences"
         },
         {
           "id": "li-unfollow",
           "title": "Unfollow viral noise without disconnecting",
           "body": "On posts that waste time → ⋯ → Unfollow or Mute. You stay connected but stop seeing their engagement bait.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.linkedin.com/feed/",
+          "linkLabel": "Open LinkedIn feed"
         }
       ]
     },
     {
       "id": "snapchat",
       "title": "Snapchat",
-      "summary": "Personalized Discover can be limited in some regions; streaks and Stories still create strong daily pull.",
+      "summary": "Personalized Discover can be limited in some regions; streaks and Stories still create strong daily pull. Many controls are app-only — links open Snapchat or Accounts.",
       "controls": [
         {
           "id": "sc-eu",
           "title": "Disable personalized content (where available)",
           "body": "Profile → Settings → Advanced services / European Union Controls → turn off Show personalized content if the option appears in your region.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://accounts.snapchat.com/",
+          "linkLabel": "Open Snapchat Accounts",
+          "helpLink": "https://help.snapchat.com/",
+          "helpLabel": "Snapchat Help"
         },
         {
           "id": "sc-streaks",
           "title": "Let low-value streaks expire",
           "body": "Streaks create daily obligation, not connection. Let streaks with distant contacts expire and keep only people you actually talk to.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.snapchat.com/",
+          "linkLabel": "Open Snapchat"
         },
         {
           "id": "sc-notifications",
           "title": "Limit Snapchat notifications",
-          "body": "Phone Settings → Notifications → Snapchat: keep only direct chats if needed. Disable Stories and Discover alerts.",
-          "category": "friction"
+          "body": "Phone Settings → Notifications → Snapchat: keep only direct chats if needed. Disable Stories and Discover alerts. Or adjust alerts inside Snapchat settings.",
+          "category": "friction",
+          "link": "https://accounts.snapchat.com/",
+          "linkLabel": "Open Snapchat Accounts",
+          "helpLink": "https://help.snapchat.com/hc/en-us/articles/7012341470484",
+          "helpLabel": "Notification help"
         }
       ]
     },
@@ -269,19 +357,25 @@
           "id": "pin-tune",
           "title": "Tune your home feed",
           "body": "Settings → Home feed tuner / Tune your home feed. Turn off sources and topics that keep recommending junk.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.pinterest.com/settings/",
+          "linkLabel": "Open Pinterest settings"
         },
         {
           "id": "pin-privacy",
           "title": "Limit data used for recommendations",
           "body": "Settings → Privacy & data. Reduce ad personalization and related targeting where available.",
-          "category": "algorithm"
+          "category": "algorithm",
+          "link": "https://www.pinterest.com/settings/privacy/",
+          "linkLabel": "Open privacy settings"
         },
         {
           "id": "pin-autoplay",
           "title": "Turn off automatic video playback",
           "body": "Settings → Social permissions / Video. Disable autoplay so boards stop becoming infinite video feeds.",
-          "category": "friction"
+          "category": "friction",
+          "link": "https://www.pinterest.com/settings/",
+          "linkLabel": "Open Pinterest settings"
         }
       ]
     }
