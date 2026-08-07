@@ -229,6 +229,57 @@
     });
   }
 
+  function isMobileDevice() {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || '');
+  }
+
+  function openControlDestination(appLink, webLink) {
+    var target = webLink || appLink;
+    if (!target) return;
+
+    if (appLink && isMobileDevice()) {
+      var openedApp = false;
+      var timer = window.setTimeout(function () {
+        if (!openedApp && webLink) {
+          window.open(webLink, '_blank', 'noopener,noreferrer');
+        }
+      }, 1100);
+
+      var onHide = function () {
+        if (document.hidden) {
+          openedApp = true;
+          window.clearTimeout(timer);
+          document.removeEventListener('visibilitychange', onHide);
+        }
+      };
+      document.addEventListener('visibilitychange', onHide);
+      window.location.href = appLink;
+      return;
+    }
+
+    window.open(target, '_blank', 'noopener,noreferrer');
+  }
+
+  function renderControlActions(control) {
+    var actions = '';
+    if (control.link || control.appLink) {
+      actions +=
+        '<button type="button" class="control-link"' +
+        (control.link ? ' data-web-link="' + escapeHtml(control.link) + '"' : '') +
+        (control.appLink ? ' data-app-link="' + escapeHtml(control.appLink) + '"' : '') +
+        '>' +
+        escapeHtml(control.linkLabel || 'Open settings') +
+        '</button>';
+    }
+    if (control.helpLink) {
+      actions +=
+        '<a class="control-link control-link--secondary" href="' + escapeHtml(control.helpLink) + '" target="_blank" rel="noopener noreferrer">' +
+        escapeHtml(control.helpLabel || 'Help guide') +
+        '</a>';
+    }
+    return actions;
+  }
+
   /* ---------- Platform controls ---------- */
 
   function initControls() {
@@ -285,19 +336,7 @@
             .map(function (c) {
               var key = platform.id + ':' + c.id;
               var done = !!checks[key];
-              var actions = '';
-              if (c.link) {
-                actions +=
-                  '<a class="control-link" href="' + escapeHtml(c.link) + '" target="_blank" rel="noopener noreferrer">' +
-                  escapeHtml(c.linkLabel || 'Open settings') +
-                  '</a>';
-              }
-              if (c.helpLink) {
-                actions +=
-                  '<a class="control-link control-link--secondary" href="' + escapeHtml(c.helpLink) + '" target="_blank" rel="noopener noreferrer">' +
-                  escapeHtml(c.helpLabel || 'Help guide') +
-                  '</a>';
-              }
+              var actions = renderControlActions(c);
               return (
                 '<div class="control-item' + (done ? ' is-done' : '') + '">' +
                   '<label class="control-item__check">' +
@@ -343,6 +382,16 @@
         });
 
         panel.addEventListener('click', function (event) {
+          var openBtn = event.target.closest('button.control-link[data-web-link], button.control-link[data-app-link]');
+          if (openBtn) {
+            event.preventDefault();
+            openControlDestination(
+              openBtn.getAttribute('data-app-link'),
+              openBtn.getAttribute('data-web-link')
+            );
+            return;
+          }
+
           var filterBtn = event.target.closest('[data-filter]');
           if (!filterBtn) return;
           activeFilter = filterBtn.getAttribute('data-filter');

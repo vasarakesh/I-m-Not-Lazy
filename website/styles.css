@@ -603,11 +603,14 @@ a:hover { text-decoration: underline; }
   align-items: center;
   padding: 8px 12px;
   border-radius: var(--radius-sm);
+  border: none;
   background: var(--color-accent);
   color: #fff !important;
+  font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 700;
   text-decoration: none !important;
+  cursor: pointer;
   transition: background 150ms ease, transform 150ms ease;
 }
 

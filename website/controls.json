@@ -3,23 +3,25 @@
     {
       "id": "instagram",
       "title": "Instagram",
-      "summary": "You cannot fully disable recommendations, but you can switch to Following, reset suggested content, and cut notification pull. Use Open links to jump into Instagram or Accounts Center — some screens only finish inside the mobile app.",
+      "summary": "You cannot fully disable recommendations, but you can switch to Following, reset suggested content, and cut notification pull. Open links go to Instagram’s real settings pages when you’re logged in (you may be asked to sign in first).",
       "controls": [
         {
           "id": "ig-following",
           "title": "Use the Following feed",
-          "body": "Open Instagram → tap For you at the top → select Following. This shows posts from people you follow in a more chronological order instead of the algorithmic For You mix.",
+          "body": "Open Instagram → tap For you at the top → select Following. This shows posts from people you follow in a more chronological order instead of the algorithmic For You mix. Instagram does not offer a direct link to the Following tab, so the button opens the app/home — then tap Following.",
           "category": "feed",
           "link": "https://www.instagram.com/",
-          "linkLabel": "Open Instagram"
+          "linkLabel": "Open Instagram (then tap Following)",
+          "appLink": "instagram://"
         },
         {
           "id": "ig-reset",
           "title": "Reset suggested content",
-          "body": "Profile → ☰ → Content preferences → Reset suggested content. This clears signals used for Reels, Explore, and suggested posts without unfollowing anyone.",
+          "body": "Open Content preferences → Reset suggested content. This clears signals used for Reels, Explore, and suggested posts without unfollowing anyone. If the reset option is missing on web, finish it in the Instagram app under Profile → ☰ → Content preferences.",
           "category": "algorithm",
-          "link": "https://www.instagram.com/accounts/edit/",
-          "linkLabel": "Open Instagram settings",
+          "link": "https://www.instagram.com/accounts/content_preferences/",
+          "linkLabel": "Open content preferences",
+          "appLink": "instagram://settings",
           "helpLink": "https://help.instagram.com/",
           "helpLabel": "Instagram Help"
         },
@@ -28,51 +30,56 @@
           "title": "Mark posts Not interested",
           "body": "On any suggested post or Reel, tap ⋯ → Not interested (or Hide). Repeat on topics that waste your time so the algorithm gets fewer wrong signals.",
           "category": "algorithm",
-          "link": "https://www.instagram.com/",
-          "linkLabel": "Open Instagram feed"
+          "link": "https://www.instagram.com/explore/",
+          "linkLabel": "Open Explore (mark Not interested)",
+          "appLink": "instagram://explore"
         },
         {
           "id": "ig-notifications",
           "title": "Turn off non-DM notifications",
-          "body": "Profile → ☰ → Notifications. Disable likes, comments, follower alerts, and live videos. Keep message alerts only if you need them for real conversations.",
+          "body": "Open notification settings and disable likes, comments, follower alerts, and live videos. Keep message alerts only if you need them for real conversations.",
           "category": "friction",
-          "link": "https://accountscenter.instagram.com/",
-          "linkLabel": "Open Accounts Center",
-          "helpLink": "https://www.instagram.com/accounts/notification_settings/",
-          "helpLabel": "Notification settings"
+          "link": "https://www.instagram.com/accounts/notification_settings/",
+          "linkLabel": "Open notification settings",
+          "appLink": "instagram://settings",
+          "helpLink": "https://help.instagram.com/546541825361643",
+          "helpLabel": "Notification guide"
         },
         {
           "id": "ig-time",
           "title": "Set a daily time reminder",
-          "body": "Profile → Your activity → Time management → set a reminder below your current average. This screen is app-only on most devices — open Instagram, then follow the guide if the menu looks different.",
+          "body": "Open Time management / Time spent and set a daily reminder below your current average. On phone, you can also use Profile → Your activity → Time management if the web page asks you to continue in the app.",
           "category": "limits",
-          "link": "https://www.instagram.com/",
-          "linkLabel": "Open Instagram",
-          "helpLink": "https://help.instagram.com/195902884574087",
-          "helpLabel": "Time spent guide"
+          "link": "https://www.instagram.com/your_activity/time_management/",
+          "linkLabel": "Open time management",
+          "appLink": "instagram://settings",
+          "helpLink": "https://help.instagram.com/2049425491975359",
+          "helpLabel": "Daily limit guide"
         }
       ]
     },
     {
       "id": "tiktok",
       "title": "TikTok",
-      "summary": "TikTok lets you turn off personalized feeds and refresh the For You page — one of the stronger built-in controls. Links open TikTok; finish Screen Time and Content preferences inside the app.",
+      "summary": "TikTok lets you turn off personalized feeds and refresh the For You page. Web settings often bounce to the feed, so Open links use TikTok’s help guides plus an in-app open when possible — finish the toggle inside Settings and privacy.",
       "controls": [
         {
           "id": "tt-personalized",
           "title": "Turn off Personalized feeds",
-          "body": "Profile → ☰ → Settings and privacy → Content preferences → turn Personalized feeds Off. Bonus: also turn Personalized search Off.",
+          "body": "In the TikTok app: Profile → ☰ → Settings and privacy → Content preferences → turn Personalized feeds Off. Bonus: also turn Personalized search Off.",
           "category": "algorithm",
-          "link": "https://www.tiktok.com/setting",
-          "linkLabel": "Open TikTok settings"
+          "link": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings",
+          "linkLabel": "Open settings guide",
+          "appLink": "snssdk1233://setting"
         },
         {
           "id": "tt-refresh",
           "title": "Refresh your For You feed",
           "body": "Settings and privacy → Content preferences → Refresh your For You feed. Use this when the feed feels junked up, then be selective about what you watch next.",
           "category": "algorithm",
-          "link": "https://www.tiktok.com/setting",
-          "linkLabel": "Open TikTok settings"
+          "link": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings",
+          "linkLabel": "Open settings guide",
+          "appLink": "snssdk1233://setting"
         },
         {
           "id": "tt-following",
@@ -80,25 +87,26 @@
           "body": "Open the Following tab instead of For You when you only want updates from people you chose to follow.",
           "category": "feed",
           "link": "https://www.tiktok.com/following",
-          "linkLabel": "Open Following feed"
+          "linkLabel": "Open Following feed",
+          "appLink": "snssdk1233://following"
         },
         {
           "id": "tt-screen-time",
           "title": "Enable Screen Time limits and breaks",
-          "body": "Settings and privacy → Screen time → set a daily limit (start at 30–45 minutes) and turn on Screen Time Breaks every 10–30 minutes.",
+          "body": "In the TikTok app: Settings and privacy → Screen time → set a daily limit (start at 30–45 minutes) and turn on Screen Time Breaks every 10–30 minutes.",
           "category": "limits",
-          "link": "https://www.tiktok.com/setting",
-          "linkLabel": "Open TikTok settings",
-          "helpLink": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/screen-time",
-          "helpLabel": "Screen Time help"
+          "link": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/screen-time",
+          "linkLabel": "Open Screen Time guide",
+          "appLink": "snssdk1233://setting"
         },
         {
           "id": "tt-notifications",
           "title": "Mute engagement notifications",
           "body": "Settings and privacy → Notifications → turn off Likes, Comments, and New followers so the app stops pulling you back mid-focus.",
           "category": "friction",
-          "link": "https://www.tiktok.com/setting/notification",
-          "linkLabel": "Open notification settings"
+          "link": "https://support.tiktok.com/en/account-and-privacy/account-privacy-settings",
+          "linkLabel": "Open settings guide",
+          "appLink": "snssdk1233://setting"
         }
       ]
     },
@@ -236,8 +244,8 @@
           "title": "Schedule Quiet Mode",
           "body": "Menu → Settings → Quiet Mode (or Digital Wellbeing tools). Mute notifications during study/work blocks and evenings.",
           "category": "limits",
-          "link": "https://www.facebook.com/settings",
-          "linkLabel": "Open Facebook settings",
+          "link": "https://www.facebook.com/settings?tab=quiet_mode",
+          "linkLabel": "Open Quiet Mode settings",
           "helpLink": "https://www.facebook.com/help/160068914429197",
           "helpLabel": "Quiet Mode help"
         }
@@ -358,7 +366,7 @@
           "title": "Tune your home feed",
           "body": "Settings → Home feed tuner / Tune your home feed. Turn off sources and topics that keep recommending junk.",
           "category": "algorithm",
-          "link": "https://www.pinterest.com/settings/",
+          "link": "https://www.pinterest.com/settings.html",
           "linkLabel": "Open Pinterest settings"
         },
         {
@@ -366,15 +374,15 @@
           "title": "Limit data used for recommendations",
           "body": "Settings → Privacy & data. Reduce ad personalization and related targeting where available.",
           "category": "algorithm",
-          "link": "https://www.pinterest.com/settings/privacy/",
-          "linkLabel": "Open privacy settings"
+          "link": "https://www.pinterest.com/settings.html",
+          "linkLabel": "Open Pinterest settings"
         },
         {
           "id": "pin-autoplay",
           "title": "Turn off automatic video playback",
           "body": "Settings → Social permissions / Video. Disable autoplay so boards stop becoming infinite video feeds.",
           "category": "friction",
-          "link": "https://www.pinterest.com/settings/",
+          "link": "https://www.pinterest.com/settings.html",
           "linkLabel": "Open Pinterest settings"
         }
       ]
